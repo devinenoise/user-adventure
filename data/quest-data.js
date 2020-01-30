@@ -1,6 +1,6 @@
 const martians = {
     id: 'martians',
-    title: 'Martians',
+    title: 'The Planet Mars',
     map: {
         top: '89%',
         left: '44%'
@@ -42,7 +42,7 @@ const martians = {
 
 const predator = {
     id: 'predator',
-    title: 'The Predator',
+    title: 'The Yautja',
     map: {
         top: '57%',
         left: '20%'

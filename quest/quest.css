@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+}
+
+header {
+    background-color: #5D6073;
+    opacity: .8;
+    padding: 25px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-family: arial, sans-serif;
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.choice {
+    display: block;
+    list-style: none;
+    padding: 5px;
+}
+
+.choice input {
+    margin-right: 10px;
+}
+
+#result {
+    background: ;
+    padding: 20px;
+}
+
+#result-description {
+    background: ;
+    font-weight: bolder;
+}

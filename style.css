@@ -7,24 +7,25 @@
 
 #home {
     background-image: url("/assets/home-bg.jpg");
-    background-repeat: no-repeat;
     
 }
 
 header {
     background-color: #5D6073;
     opacity: .8;
+    padding: 25px;
+    margin: 0 auto;
 }
 
 h1 {
     font-family: "Bangers", sans-serif;
-    color: #A68A7B;
+    color: #D5AB21;
     font-size: 48px;
     letter-spacing: .5em;
     text-align: center;
-
+    margin: 10px;
+    font-weight: lighter;
 }
-
 
 #login {
     display: flex;
