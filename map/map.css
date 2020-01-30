@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#map {
+    background-image: url("../assets/galaxy.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 99%;
+    height: 99%;
+    
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile * {
+    margin-right: 5px;
+}
+
+h2 {
+    font-family: sans-serif;
+    color: white;
+    font-size: 32px;
+    letter-spacing: .2em;
+    
+}
+

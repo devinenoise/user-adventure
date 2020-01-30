@@ -49,22 +49,17 @@ const predator = {
     },
     image: 'predator.jpg',
     description: `
-        You travel to a nearby village you have heard is being
-        terrorized by a dragon. Sure enough as you rent a room
-        in a local inn, you go outside and see the dragon about
-        to lay seige! What do you do?
+        You've landed in the dense jungles of the Predators home planet.  He suddenly appears before you 
+        after deactivating his camouflage and screams his battle cry.
     `,
     choices: [{
         id: 'run',
-        description: 'Get the hell out of the village',
+        description: 'Get back in your ship and leave',
         result: `
-            You high tail it in the opposite direction. Luckily,
-            in the panic you find a bag on the ground with 15 diplomacy.
-            Unluckily, you trip over a discarded wagon wheel on your
-            way out of town and take 40 life damage. 
+            You say, "nope" and get back into your ship and leave the planet as soon as possible.
         `,
-        life: -35,
-        diplomacy: 35
+        life: 0,
+        diplomacy: 10
     }, {
         id: 'fight',
         description: 'Fiiiiiggghhhttt!',
@@ -75,139 +70,130 @@ const predator = {
             Oh, and you take 45 life damage.
         `,
         life: -45,
-        diplomacy: 0
+        diplomacy: -10
     }, {
-        id: 'archer',
-        description: 'Emulate that guy from LOR who shot an arrow',
+        id: 'friend',
+        description: 'Try to become friends',
         result: `
-            Inspired by the legend of Bard the Bowman, you notice a
-            stunned archer standing nearby and take their bow and quiver,
-            climb to the top of a tall tower and take aim. On the dragon's
-            next pass you steady your aim and let one fly. Amazingly,
-            you strike the dragon in the eye, piercing into the brain and
-            killing the dragon instantly. The villagers declare you their hero
-            and award you 90 diplomacy.
+            You use your charm and sweet talk the Predator into showing you his camouflage technology.  You become quick friends.
         `,
-        life: 0,
+        life: 20,
         diplomacy: 90
     }]
 };
 
 const scientology = {
     id: 'scientology',
-    title: 'The Scientology Museum',
+    title: 'The Church of Scientology',
     map: {
         top: '31%',
         left: '5%'
     },
     image: 'scientology.jpg',
     description: `
-        As you enter the quest chamber you notice three chests before you.
-        Just as you start to imagine the wealth, you see a giant serpent
-        emerge from the back of the chamber. You'll need to make a run for it,
-        but you have time to open one chest before you take off. Which one 
-        do you choose?
+        You take a quick trip home to Earth to pick up more sandwiches and on your way to the local market notice an enormous building you haven't seen before.  Curiosity gets the best of you and you decide to enter the church to learn more.
     `,
     choices: [{
-        id: 'wooden',
-        description: 'A Wooden Chest',
-        result: 'You grab 40 diplomacy pieces!',
+        id: 'join',
+        description: 'Join themmmm',
+        result: `You are convinced that Tom Cruise and John Travolta know something that you don't and decide to join them to become
+                a level 8 Scientologist.`,
         life: 0,
         diplomacy: 40
     }, {
-        id: 'diplomacyen',
-        description: 'A diplomacyen Chest',
-        result: 'Oh no! The chest is booby trapped with poison and you take 50 life damage',
-        life: -50,
-        diplomacy: 0
+        id: 'leave',
+        description: 'You turn around and walk out',
+        result: 'You decide that Tom Cruise isn\'t enough to convince you to join the world of Scientology and decide to leave.',
+        life: 20,
+        diplomacy: -10
     }, {
-        id: 'jeweled',
-        description: 'A Jeweled Chest',
-        result: 'A warm light engulfs you and you gain 35 life',
+        id: 'pamphlet',
+        description: 'Take this pamphlet',
+        result: 'You decide to take home some reading material and make a better assessment of this new fascinating religion.',
         life: 35,
-        diplomacy: 0
+        diplomacy: 15
     }]
 };
 
-const aliensGuy = {
-    id: 'Aliens Guy',
-    title: 'It\'s Probably Aliens',
-    map: {
-        top: '11%',
-        left: '66%'
-    },
-    image: 'aliensguy.jpg',
-    description: `
-        As you enter the quest chamber you notice three chests before you.
-        Just as you start to imagine the wealth, you see a giant serpent
-        emerge from the back of the chamber. You'll need to make a run for it,
-        but you have time to open one chest before you take off. Which one 
-        do you choose?
-    `,
-    choices: [{
-        id: 'wooden',
-        description: 'A Wooden Chest',
-        result: 'You grab 40 diplomacy pieces!',
-        life: 0,
-        diplomacy: 40
-    }, {
-        id: 'diplomacyen',
-        description: 'A diplomacyen Chest',
-        result: 'Oh no! The chest is booby trapped with poison and you take 50 life damage',
-        life: -50,
-        diplomacy: 0
-    }, {
-        id: 'jeweled',
-        description: 'A Jeweled Chest',
-        result: 'A warm light engulfs you and you gain 35 life',
-        life: 35,
-        diplomacy: 0
-    }]
-};
+// Add more quests later on
 
-const xenos = {
-    id: 'Xenos',
-    title: 'A Visit To Xenos',
-    map: {
-        top: '75%',
-        left: '35%'
-    },
-    image: 'xenos.jpg',
-    description: `
-        As you enter the quest chamber you notice three chests before you.
-        Just as you start to imagine the wealth, you see a giant serpent
-        emerge from the back of the chamber. You'll need to make a run for it,
-        but you have time to open one chest before you take off. Which one 
-        do you choose?
-    `,
-    choices: [{
-        id: 'wooden',
-        description: 'A Wooden Chest',
-        result: 'You grab 40 diplomacy pieces!',
-        life: 0,
-        diplomacy: 40
-    }, {
-        id: 'diplomacyen',
-        description: 'A diplomacyen Chest',
-        result: 'Oh no! The chest is booby trapped with poison and you take 50 life damage',
-        life: -50,
-        diplomacy: 0
-    }, {
-        id: 'jeweled',
-        description: 'A Jeweled Chest',
-        result: 'A warm light engulfs you and you gain 35 life',
-        life: 35,
-        diplomacy: 0
-    }]
-};
+// const aliensGuy = {
+//     id: 'Aliens Guy',
+//     title: 'It\'s Probably Aliens',
+//     map: {
+//         top: '11%',
+//         left: '66%'
+//     },
+//     image: 'aliensguy.jpg',
+//     description: `
+//         As you enter the quest chamber you notice three chests before you.
+//         Just as you start to imagine the wealth, you see a giant serpent
+//         emerge from the back of the chamber. You'll need to make a run for it,
+//         but you have time to open one chest before you take off. Which one 
+//         do you choose?
+//     `,
+//     choices: [{
+//         id: 'wooden',
+//         description: 'A Wooden Chest',
+//         result: 'You grab 40 diplomacy pieces!',
+//         life: 0,
+//         diplomacy: 40
+//     }, {
+//         id: 'diplomacyen',
+//         description: 'A diplomacyen Chest',
+//         result: 'Oh no! The chest is booby trapped with poison and you take 50 life damage',
+//         life: -50,
+//         diplomacy: 0
+//     }, {
+//         id: 'jeweled',
+//         description: 'A Jeweled Chest',
+//         result: 'A warm light engulfs you and you gain 35 life',
+//         life: 35,
+//         diplomacy: 0
+//     }]
+// };
+
+// const xenos = {
+//     id: 'Xenos',
+//     title: 'A Visit To Xenos',
+//     map: {
+//         top: '75%',
+//         left: '35%'
+//     },
+//     image: 'xenos.jpg',
+//     description: `
+//         As you enter the quest chamber you notice three chests before you.
+//         Just as you start to imagine the wealth, you see a giant serpent
+//         emerge from the back of the chamber. You'll need to make a run for it,
+//         but you have time to open one chest before you take off. Which one 
+//         do you choose?
+//     `,
+//     choices: [{
+//         id: 'wooden',
+//         description: 'A Wooden Chest',
+//         result: 'You grab 40 diplomacy pieces!',
+//         life: 0,
+//         diplomacy: 40
+//     }, {
+//         id: 'diplomacyen',
+//         description: 'A diplomacyen Chest',
+//         result: 'Oh no! The chest is booby trapped with poison and you take 50 life damage',
+//         life: -50,
+//         diplomacy: 0
+//     }, {
+//         id: 'jeweled',
+//         description: 'A Jeweled Chest',
+//         result: 'A warm light engulfs you and you gain 35 life',
+//         life: 35,
+//         diplomacy: 0
+//     }]
+// };
 
 const quests =
     [
         martians,
         predator,
         scientology,
-        aliensGuy,
-        xenos
     ];
 
 export default quests;
