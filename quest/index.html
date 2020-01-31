@@ -1,44 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galactic Diplomat</title>
-    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="quest.css">
+    <link rel="stylesheet" href="../map/map.css">
 </head>
 <body>
     <header>
-        <header>
-            <header>
-                <h1>Galactic Diplomat</h1>
-                <div class="profile">
-                    <span id="name"></span>
-                    <span>Life: </span>
-                    <span id="life"></span>
-                    <span>Diplomacy: </span>
-                    <span id="diplomacy"></span>
-                </div>
-            </header>
-        </header>
+        <h1>Galactic Diplomat</h1>
+        <div class="profile">
+            <span id="name"></span>
+            <span>Life: </span>
+            <span id="life"></span>
+            <span>Diplomacy: </span>
+            <span id="diplomacy"></span>
+        </div>
+        <a id="nav" href="../map">Back to Map</a>
     </header>
-    
-    <main> 
+
+    <main>
         <h2 id="title"></h2>
         <p>
+            
             <img id="image">
         </p>
         <p id="description"></p>
         <form id="choice-form">
             <p id="choices"></p>
-            <button>Choose</button>
+            <div class="button-container">
+                <button>Choose</button>
+            </div>
         </form>
         <section id="result" class="hidden">
             <p id="result-description"></p>
-            <a href="../map">Back to Map</a>
+            
         </section>
     </main>
 
     <script type="module" src="quest.js"></script>
 </body>
+
 </html>

@@ -5,14 +5,14 @@ const martians = {
         top: '89%',
         left: '44%'
     },
-    image: 'martians.jpg',
+    image: '../assets/martians.jpg',
     description: `
         You land on this strange red rock and encounter a group of Martians that don't appear to be
         very friendly.  What do you do?
     `,
     choices: [{
         id: 'negotiate',
-        description: 'Negotiate with them',
+        description: 'Negotiate with them.',
         result: `
             Because you had a career in hostage negotiations back on Earth, you are able to work out a 
             bargain with the Martians that allows you to leave their planet as soon as possible.  You gain 35 diplomacy points.
@@ -47,14 +47,14 @@ const predator = {
         top: '57%',
         left: '20%'
     },
-    image: 'predator.jpg',
+    image: '../assets/predator.jpg',
     description: `
         You've landed in the dense jungles of the Predators home planet.  He suddenly appears before you 
         after deactivating his camouflage and screams his battle cry.
     `,
     choices: [{
         id: 'run',
-        description: 'Get back in your ship and leave',
+        description: 'Get back in your ship and leave.',
         result: `
             You say, "nope" and get back into your ship and leave the planet as soon as possible.
         `,
@@ -73,9 +73,9 @@ const predator = {
         diplomacy: -10
     }, {
         id: 'friend',
-        description: 'Try to become friends',
+        description: 'Try to become friends.',
         result: `
-            You use your charm and sweet talk the Predator into showing you his camouflage technology.  You become quick friends.
+            You use your charm and sweet talk the Predator into showing you his camouflage technology.  You become quick friends and decide to hunt Xenomorphs together.
         `,
         life: 20,
         diplomacy: 90
@@ -89,26 +89,26 @@ const scientology = {
         top: '31%',
         left: '5%'
     },
-    image: 'scientology.jpg',
+    image: '../assets/scientology.jpg',
     description: `
         You take a quick trip home to Earth to pick up more sandwiches and on your way to the local market notice an enormous building you haven't seen before.  Curiosity gets the best of you and you decide to enter the church to learn more.
     `,
     choices: [{
         id: 'join',
-        description: 'Join themmmm',
+        description: 'Join themmmm.',
         result: `You are convinced that Tom Cruise and John Travolta know something that you don't and decide to join them to become
                 a level 8 Scientologist.`,
         life: 0,
         diplomacy: 40
     }, {
         id: 'leave',
-        description: 'You turn around and walk out',
+        description: 'You turn around and walk out.',
         result: 'You decide that Tom Cruise isn\'t enough to convince you to join the world of Scientology and decide to leave.',
         life: 20,
         diplomacy: -10
     }, {
         id: 'pamphlet',
-        description: 'Take this pamphlet',
+        description: 'Take this pamphlet.',
         result: 'You decide to take home some reading material and make a better assessment of this new fascinating religion.',
         life: 35,
         diplomacy: 15

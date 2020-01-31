@@ -1,4 +1,4 @@
-import saveUser from './user-setting.js';
+import { saveUser } from './user-setting.js';
 import makeUser from './make-user.js';
 
 // getting some DOM
@@ -10,7 +10,7 @@ userSignUp.addEventListener('submit', (e) => {
 
     // creating the form object with FormData
     const formData = new FormData(userSignUp);
-    
+
     // saving the new user
     const user = makeUser(formData);
     saveUser(user);
