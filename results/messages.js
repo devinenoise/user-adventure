@@ -1,19 +1,19 @@
 export const winMsgs = {
-    low: 'you live alone in a cottage',
-    medium: 'you return to a normal life',
-    high: 'you are a king amongst the people',
+    low: 'live alone in a cottage',
+    medium: 'return to a normal life',
+    high: 'are a king amongst the people',
 
 };
 
 export const loseMsgs = {
-    low: 'you are shamed by citizens of Earth',
-    medium: 'you are somewhat of a celebrity',
+    low: 'are shamed by citizens of Earth',
+    medium: 'are somewhat of a celebrity',
     high: 'your charm is only matched by perhaps Tom Cruise',
 
 };
 
 export const lifeMsgs = {
-    dead: 'you died',
-    weak: 'you did your best but it wasn\'t great',
-    healthy: 'you are a super hero',
+    dead: 'You died',
+    weak: 'You did your best but it wasn\'t great',
+    healthy: 'You are a super hero',
 };

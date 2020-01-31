@@ -73,7 +73,7 @@ h2 {
         
 }
 
-#result-description {
+p#result-description {
     font-weight: bolder;
     color: white;
     padding: 25px;
@@ -92,7 +92,7 @@ h2 {
 .button-container {
     border: 1px solid white;
     padding: 10px;
-    margin: 20px;
+    margin: 10px;
     text-align: center;
     background: grey;
 }

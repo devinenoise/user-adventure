@@ -24,8 +24,8 @@ else {
 
 const diplomacyMsg = diplomacyMsgs[diplomacyResult];
 
-let story = 'You have traveled around the galaxy, ';
-story += user.name + ` , `;
+let story = 'You have traversed the the galaxy, ';
+story += user.name + `. `;
 story += lifeMsg + ' and ' + diplomacyMsg + '.';
 
 storyDisplay.textContent = story;

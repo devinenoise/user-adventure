@@ -84,7 +84,7 @@ const scientology = {
     title: 'The Church of Scientology',
     map: {
         top: '31%',
-        left: '5%'
+        left: '55%'
     },
     image: '../assets/scientology.jpg',
     description: `

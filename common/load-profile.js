@@ -23,6 +23,7 @@ export default function loadProfile() {
     // check to see the value of life from the isDead function
     if (isDead(user)) {
         life.textContent = 'DEAD';
+        life.classList.add('red');
     }
     else {
         life.textContent = user.life;
