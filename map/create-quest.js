@@ -1,4 +1,4 @@
-export default function createQuest(quest) {
+export default function createQuestOnMap(quest) {
 
     //create an anchor tag
     const link = document.createElement('a');
@@ -11,7 +11,7 @@ export default function createQuest(quest) {
 
     //setting the location of the link on the map
     link.style.top = quest.map.top;
-    link.style.bottom = quest.map.bottom;
+    link.style.left = quest.map.left;
     link.textContent = quest.title;
 
     return link;

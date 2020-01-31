@@ -63,24 +63,29 @@ h2 {
     color: white;
 }
 
+.hidden {
+    display: none;
+}
+
 #result {
     padding: 20px;
     color: white;
-    
+        
 }
 
 #result-description {
     font-weight: bolder;
     color: white;
     padding: 25px;
-    background-color: #D5AB21;
+    margin-bottom: 30px;
+    background-color: #D5AB21; 
 }
 
 #nav {
-    float: right;
     text-decoration: none;
     color: white;
     text-transform: uppercase;
+    text-align: center;
     font-family: arial, sans-serif;
 }
 
@@ -94,10 +99,12 @@ h2 {
 
 #description {
     font-size: 22px;
+    
 }
 
 #choice-form {
     font-size: 22px;
+    
 }
 
 button {

@@ -48,9 +48,11 @@ h2 {
 
 .quest.completed {
     color: red;
+    text-decoration: line-through;
+
 }
     
-.quest.completed:after {
+/* .quest.completed:after {
     text-decoration: line-through;
-}
+} */
 

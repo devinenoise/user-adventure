@@ -62,14 +62,11 @@ const predator = {
         diplomacy: 10
     }, {
         id: 'fight',
-        description: 'Fiiiiiggghhhttt!',
+        description: 'Shoot him with an RPG!',
         result: `
-            You attempt to charge towards the dragon, who sees you approach
-            and let's loose a fireball. You wake up the next morning and the
-            village has been completely burned to the ground.
-            Oh, and you take 45 life damage.
+            You take your chances and battle the Predator with your rocket launcher.  It's a hard fought battle, but you survive!
         `,
-        life: -45,
+        life: -25,
         diplomacy: -10
     }, {
         id: 'friend',
@@ -108,8 +105,8 @@ const scientology = {
         diplomacy: -10
     }, {
         id: 'pamphlet',
-        description: 'Take this pamphlet.',
-        result: 'You decide to take home some reading material and make a better assessment of this new fascinating religion.',
+        description: 'Take a pamphlet.',
+        result: 'You decide to take home some reading material and make a better assessment of this new fascinating sci-fi religion.',
         life: -35,
         diplomacy: 15
     }]

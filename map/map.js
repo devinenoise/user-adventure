@@ -1,9 +1,9 @@
-import { quests } from '../data/quest-data';
+import quests from '../data/quest-data.js';
 import { getUser } from '../data/user-setting.js';
 import loadProfile, { isDead } from '../common/load-profile.js';
-import { createQuestLink } from '../data/create-quest-link.js';
+import createQuestOnMap from './create-quest.js';
 import completedQuest from './completed-quest.js';
-import hasCompletedQuests from './has-completed-quests';
+import hasCompletedQuests from './has-completed-quests.js';
 
 
 loadProfile();
@@ -25,7 +25,7 @@ for (let i = 0; i < quests.length; i++) {
         questDisplay = completedQuest(quest);
     }
     else {
-        questDisplay = createQuestLink(quest);
+        questDisplay = createQuestOnMap(quest);
 
     }
     nav.appendChild(questDisplay);
