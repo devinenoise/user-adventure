@@ -17,9 +17,8 @@ export default function loadProfile() {
     if (!user) window.location = './';
 
     // display the user profile on the dom
-    name.textContent = user.name;
+    name.textContent = user.name + ' -- ';
     diplomacy.textContent = user.diplomacy;
-
     // check to see the value of life from the isDead function
     if (isDead(user)) {
         life.textContent = 'DEAD';
@@ -27,5 +26,6 @@ export default function loadProfile() {
     }
     else {
         life.textContent = user.life;
+        life.classList.add('green');
     }
 }

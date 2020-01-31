@@ -13,7 +13,7 @@ img {
 }
 
 body {
-    background-color: black
+    background-image: url("../assets/home-bg.jpg");
 }
 
 main {
@@ -39,7 +39,7 @@ h1 {
     letter-spacing: .5em;
     text-align: center;
     margin: 10px;
-    font-weight: lighter;
+    font-weight: bold;
 }
 
 h2 {
@@ -61,6 +61,7 @@ h2 {
 #story-display {
     font-weight: bolder;
     color: white;
+    font-size: 24px;
     padding: 25px;
     margin-top: 25px;
     margin-bottom: 20px;
@@ -87,4 +88,22 @@ button {
 
 .red {
     color: red;
+    font-weight: bold
+}
+
+.green {
+    color: rgb(0, 211, 0);
+    font-weight: bold;
+}
+
+.button-container {
+    border: 1px solid white;
+    padding: 10px;
+    margin-top: 50px;
+    text-align: center;
+    background: grey;
+}
+
+.button-container:hover {
+    background-color: #A68A7B;
 }

@@ -1,6 +1,6 @@
 const martians = {
     id: 'martians',
-    title: 'The Planet Mars',
+    title: 'Planet Mars',
     map: {
         top: '89%',
         left: '44%'
@@ -15,7 +15,7 @@ const martians = {
         description: 'Negotiate with them.',
         result: `
             Because you had a career in hostage negotiations back on Earth, you are able to work out a 
-            bargain with the Martians that allows you to leave their planet as soon as possible.  You gain 35 diplomacy points.
+            bargain with the Martians that allows you to leave their planet as soon as possible.  You gain 35 diplomacy points. 
         `,
         life: 0,
         diplomacy: 35
@@ -32,11 +32,10 @@ const martians = {
         id: 'move-in',
         description: 'Build a home on mars and co-exist with the martians and eat donuts all day.',
         result: `
-            As you make a dash for the door a giant spider descends and take a bite of flesh,
-            causing 50 life damage.
+            You decide to live with these crazy martians and they gift you your own space helmet and blaster ray. You gain 25 diplomacy points. 
         `,
-        life: -15,
-        diplomacy: 15
+        life: 0,
+        diplomacy: 25
     }]
 };
 
@@ -56,7 +55,7 @@ const predator = {
         id: 'run',
         description: 'Get back in your ship and leave.',
         result: `
-            You say, "nope" and get back into your ship and leave the planet as soon as possible.
+            You say, "nope" and get back into your ship and leave the planet as soon as possible. You gain 10 diplomacy points. 
         `,
         life: 0,
         diplomacy: 10
@@ -64,7 +63,7 @@ const predator = {
         id: 'fight',
         description: 'Shoot him with an RPG!',
         result: `
-            You take your chances and battle the Predator with your rocket launcher.  It's a hard fought battle, but you survive!
+            You take your chances and battle the Predator with your rocket launcher.  It's a hard fought battle, but you survive!  You lose 25 life points.
         `,
         life: -25,
         diplomacy: -10
@@ -72,7 +71,7 @@ const predator = {
         id: 'friend',
         description: 'Try to become friends.',
         result: `
-            You use your charm and sweet talk the Predator into showing you his camouflage technology.  You become quick friends and decide to hunt Xenomorphs together.
+            You use your charm and sweet talk the Predator into showing you his camouflage technology.  You become quick friends and decide to hunt Xenomorphs together.  You gain 90 diplomacy points. 
         `,
         life: 5,
         diplomacy: 90
@@ -81,7 +80,7 @@ const predator = {
 
 const scientology = {
     id: 'scientology',
-    title: 'The Church of Scientology',
+    title: 'Planet Earth',
     map: {
         top: '31%',
         left: '55%'
@@ -93,104 +92,63 @@ const scientology = {
     choices: [{
         id: 'join',
         description: 'Join themmmm.',
-        result: `You are convinced that Tom Cruise and John Travolta know something that you don't and decide to join them to become
-                a level 8 Scientologist.`,
+        result: `You are convinced that Tom Cruise and John Travolta know something that you don't and decide to join them to become a level 8 Scientologist. You gain 40 diplomacy points. `,
         life: 0,
         diplomacy: 40
     }, {
         id: 'leave',
         description: 'You turn around and walk out.',
-        result: 'You decide that Tom Cruise isn\'t enough to convince you to join the world of Scientology and decide to leave.',
+        result: 'You decide that Tom Cruise isn\'t enough to convince you to join the world of Scientology and decide to leave.  You gain 20 life points.',
         life: 20,
         diplomacy: -10
     }, {
         id: 'pamphlet',
         description: 'Take a pamphlet.',
-        result: 'You decide to take home some reading material and make a better assessment of this new fascinating sci-fi religion.',
-        life: -35,
+        result: 'You decide to take home some reading material and make a better assessment of this new fascinating sci-fi religion.  You lose 50 life points.',
+        life: -50,
         diplomacy: 15
     }]
 };
 
-// Add more quests later on
+const xenos = {
+    id: 'Xenos',
+    title: 'Xenos',
+    map: {
+        top: '65%',
+        left: '85%'
+    },
+    image: 'xenos.jpg',
+    description: `
+        The planet of Xenos has strange alien inhabitants that apparently are vegans.  They have transcended the need to eat meat or grow hair.  They appear friendly, yet judgemental.  Be careful.
+    `,
+    choices: [{
+        id: 'hummus',
+        description: 'Eat Hummus Together',
+        result: 'You visit the Xenos\'s version of a Laughing Planet and enjoy a nice meal.  You gain 40 diplomacy points.',
+        life: 20,
+        diplomacy: 40
+    }, {
+        id: 'kill',
+        description: 'Nuke the place',
+        result: 'These alievegans are stronger than they appear and destroy you.  ',
+        life: -200,
+        diplomacy: 0
+    }, {
+        id: 'coexist',
+        description: 'Leave',
+        result: 'You decide to leave the planet never to return.  You gain 35 life points.',
+        life: 35,
+        diplomacy: 5
+    }]
+};
 
-// const aliensGuy = {
-//     id: 'Aliens Guy',
-//     title: 'It\'s Probably Aliens',
-//     map: {
-//         top: '11%',
-//         left: '66%'
-//     },
-//     image: 'aliensguy.jpg',
-//     description: `
-//         As you enter the quest chamber you notice three chests before you.
-//         Just as you start to imagine the wealth, you see a giant serpent
-//         emerge from the back of the chamber. You'll need to make a run for it,
-//         but you have time to open one chest before you take off. Which one 
-//         do you choose?
-//     `,
-//     choices: [{
-//         id: 'wooden',
-//         description: 'A Wooden Chest',
-//         result: 'You grab 40 diplomacy pieces!',
-//         life: 0,
-//         diplomacy: 40
-//     }, {
-//         id: 'diplomacyen',
-//         description: 'A diplomacyen Chest',
-//         result: 'Oh no! The chest is booby trapped with poison and you take 50 life damage',
-//         life: -50,
-//         diplomacy: 0
-//     }, {
-//         id: 'jeweled',
-//         description: 'A Jeweled Chest',
-//         result: 'A warm light engulfs you and you gain 35 life',
-//         life: 35,
-//         diplomacy: 0
-//     }]
-// };
-
-// const xenos = {
-//     id: 'Xenos',
-//     title: 'A Visit To Xenos',
-//     map: {
-//         top: '75%',
-//         left: '35%'
-//     },
-//     image: 'xenos.jpg',
-//     description: `
-//         As you enter the quest chamber you notice three chests before you.
-//         Just as you start to imagine the wealth, you see a giant serpent
-//         emerge from the back of the chamber. You'll need to make a run for it,
-//         but you have time to open one chest before you take off. Which one 
-//         do you choose?
-//     `,
-//     choices: [{
-//         id: 'wooden',
-//         description: 'A Wooden Chest',
-//         result: 'You grab 40 diplomacy pieces!',
-//         life: 0,
-//         diplomacy: 40
-//     }, {
-//         id: 'diplomacyen',
-//         description: 'A diplomacyen Chest',
-//         result: 'Oh no! The chest is booby trapped with poison and you take 50 life damage',
-//         life: -50,
-//         diplomacy: 0
-//     }, {
-//         id: 'jeweled',
-//         description: 'A Jeweled Chest',
-//         result: 'A warm light engulfs you and you gain 35 life',
-//         life: 35,
-//         diplomacy: 0
-//     }]
-// };
 
 const quests =
     [
         martians,
         predator,
         scientology,
+        xenos,
     ];
 
 export default quests;
