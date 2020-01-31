@@ -16,10 +16,10 @@ const lifeMsg = lifeMsgs[lifeResult];
 
 let diplomacyMsgs = null;
 if (lifeResult === 'dead') {
-    diplomacyMsgs = deadDiplomacyMessages;
+    diplomacyMsgs = loseMsgs;
 }
 else {
-    diplomacyMsgs = aliveDiplomacyMessages;
+    diplomacyMsgs = winMsgs;
 }
 
 const diplomacyMsg = diplomacyMsgs[diplomacyResult];

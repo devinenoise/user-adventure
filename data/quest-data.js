@@ -27,7 +27,7 @@ const martians = {
             use their advanced alien weaponry to do you harm.  You lose 30 life.
         `,
         life: -30,
-        diplomacy: 50
+        diplomacy: 5
     }, {
         id: 'move-in',
         description: 'Build a home on mars and co-exist with the martians and eat donuts all day.',
@@ -77,7 +77,7 @@ const predator = {
         result: `
             You use your charm and sweet talk the Predator into showing you his camouflage technology.  You become quick friends and decide to hunt Xenomorphs together.
         `,
-        life: 20,
+        life: 5,
         diplomacy: 90
     }]
 };
@@ -110,7 +110,7 @@ const scientology = {
         id: 'pamphlet',
         description: 'Take this pamphlet.',
         result: 'You decide to take home some reading material and make a better assessment of this new fascinating religion.',
-        life: 35,
+        life: -35,
         diplomacy: 15
     }]
 };
