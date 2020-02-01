@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    height: 360px;
+    width: 640px;
+    display: flex;
+    margin: 25px;
+}
+
+body {
+    background-image: url('../assets/stars.jpg');
+    background-size: cover;
+}
+
+main {
+    color: white;
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 75px;
+    font-family: arial, sans-serif;
+}
+
+header {
+    background-color: #5D6073;
+    opacity: .8;
+    margin: 0 auto;
+    font-family: arial, sans-serif;
+}
+
+h1 {
+    font-family: "Bangers", sans-serif;
+    color: #D5AB21;
+    font-size: 48px;
+    letter-spacing: .5em;
+    text-align: center;
+    margin: 10px;
+    font-weight: bold;
+}
+
+h2 {
+    
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.choice {
+    display: block;
+    list-style: none;
+    padding: 5px;
+    color: white;
+    margin: 20px;
+}
+
+.choice input {
+    margin-right: 10px;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+#result {
+    padding: 20px;
+    color: white;
+        
+}
+
+p#result-description {
+    font-weight: bolder;
+    font-size: 20px;
+    color: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #D5AB21; 
+}
+
+#nav {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: arial, sans-serif;
+}
+
+.button-container {
+    border: 1px solid white;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background: grey;
+}
+
+#description {
+    font-size: 22px;
+    
+}
+
+#choice-form {
+    font-size: 22px;
+    
+}
+
+button {
+    background: transparent;
+    font-size: 22px;
+    font-family: arial, sans-serif;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+}
+
+.red {
+    color: red;
+    font-weight: bold;
+}
+
+.button-container:hover {
+    background-color: #A68A7B;
+}
+
+.green {
+    color: rgb(0, 211, 0);
+    font-weight: bold;
+}

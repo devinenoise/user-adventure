@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* #nav, a {
+    border: 1px solid #353440;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10%;
+} 
+ */
+#nav, a:hover {
+    font-weight:bold;
+    
+}
+
+#map {
+    background-image: url("../assets/galaxy.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;    
+}
+
+#directions {
+    border-left: 10px solid #D5AB21;
+    border-right: 10px solid #D5AB21;
+    background-color: black;
+    margin-top: 10px;
+    float: left;
+    border-radius: 10%;
+    color: white;
+    font-family: arial;
+    width: 400px;
+    padding: 15px;
+    opacity: 50%;
+}
+
+#directions:hover {
+    opacity: 100%;
+    -webkit-box-shadow: 11px 7px 12px 10px rgba(0,0,0,0.58); 
+box-shadow: 11px 7px 12px 10px rgba(0,0,0,0.58);
+}
+
+span {
+    margin-left: 10px;
+}
+
+header {
+    background-color: #5D6073;
+    opacity: .8;
+    padding: 25px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-family: arial, sans-serif;
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+#diplomacy {
+    color: #D5AB21;
+    font-weight: bold;
+}
+
+.profile {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+#name {
+    font-weight: bold;
+}
+
+.quest {
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    font-family: arial;
+    text-decoration: none;
+}
+
+.quest.completed {
+    color: red;
+    text-decoration: line-through;
+
+}
+
+.green {
+    color: rgb(0, 211, 0);
+    font-weight: bold;
+}

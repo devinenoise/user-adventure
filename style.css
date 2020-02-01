@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+
+body {
+    background-image: url("/assets/blue-red-galaxy.jpg");
+    
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: #5D6073;
+    opacity: .8;
+    padding: 25px;
+    margin: 0 auto;
+    font-family: arial, sans-serif;
+}
+
+#diplomacy {
+    color: #D5AB21;
+}
+
+#logo {
+    width: 200px;
+    height: 200px;
+    margin-top: 30px;
+    margin-bottom: -100px;
+}
+
+#welcome {
+    font-size: 28px;
+    margin-bottom: 60px;
+}
+
+h1 {
+    font-family: "Bangers", sans-serif;
+    color: #D5AB21;
+    font-size: 48px;
+    letter-spacing: .5em;
+    text-align: center;
+    margin: 10px;
+    font-weight: bold;
+}
+
+#login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-family: arial, sans-serif;
+    margin: 20px;
+}
+
+.button-container {
+    border: 1px solid white;
+    padding: 0;
+    margin: 20px;
+    text-align: center;
+    background: grey;
+}
+
+.button-container:hover {
+    background-color: #A68A7B;
+}
+
+button {
+    background: transparent;
+    font-size: 22px;
+    font-family: arial, sans-serif;
+    color: white;
+    border: none;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+
+#welcome-container {
+    margin-top: 150px;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+h2 {
+    margin-bottom: 50px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+input {
+    padding: 5px;
+    font-size: 2em;
+}
+
+.green {
+    color: rgb(0, 211, 0);
+    font-weight: bold;
+}
