@@ -1,7 +1,7 @@
 export const winMsgs = {
     low: 'live alone in a cottage',
     medium: 'return to a normal life',
-    high: 'are a king amongst the people',
+    high: 'are a leader amongst the people',
 
 };
 
